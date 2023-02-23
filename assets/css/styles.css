@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+li{list-style: none;}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+header{
+    background-color: #242424;
+}
+
+.main-container{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    color: aliceblue;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.opciones{
+    display: flex;
+    margin: 10 0px;
+    align-items: center;
+}
+
+.opt{
+    margin: 0 12px;
+}
+
+.hed-img{
+    height: 70px;
+    margin-left: 70px;
+}
+
+/* ----------------------------------------- */
+
+.hero{
+    background: no-repeat center center/cover;
+    background-image: url(../img/wallpaperbetter.com_1920x1200.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.hero-txt{
+    font-size: 5em;
+    color: #1a1a1a;
+}
+
+.hero-button{
+    font-size: 2em;
+    color: #1a1a1a;
+    border: 6px solid #1a1a1a;
+    border-radius: 20px;
+    padding: 11px 22px;
+}
+
+
+/* ------------------products----------------------- */
+
+.products-cont{
+    background-color: #242424;
+    margin: 5em 8em;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.prod{
+    align-self: center;
+}
+
+/* --------------------cads---------------------- */
+
+.shop-content{
+    display: flex;
+    background-color: #5a5a5a;
+    justify-content: space-around;
+    max-width: 800px;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(39, 39, 39, 0.2);
+    background-color: aliceblue;
+    padding-top: 10px;
+    max-width: 300px;
+    margin: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.card-img{
+    width: 250px;
+    height: 250px;
+}
+
+.price{
+    color:gray;
+    font-size: 22px;
+
+}
+.cardbtn{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: #bbbbbb;
+    background-color: #1a1a1a;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.cardbtn:hover{
+    opacity: 0.7;
+}
+
+/* modal container */
+
+.modal-container{
+    width: 50%;
+    margin: 0 25%;
+    max-height: 88vh;
+    color: #bbbbbb;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(39, 39, 39, 4);
+    /* top */
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+}
+
+.modal-container::-webkit-scrollbar{
+    display: none;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #080808;
+    color: #cecece;
+    width: 100%;
+}
+
+.modal-header-title{
+    justify-self: start;
+}
+
+.modal-header-button{
+    cursor: pointer;
+}
+
+.modal-container     > .modal-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+
+.modal-container > div > img {
+    height: 120px;
+    width: 120px;
+}
+
+.total-content{
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+.pagar{
+    margin-left: 400px;
+    border: solid #bbbbbb;
+    outline: 0;
+    color: #bbbbbb;
+    padding: 3px 10px;
+    border-radius: 4px;
+    background-color: #1a1a1a;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.pagar:hover{
+    opacity: 0.7;
+}
