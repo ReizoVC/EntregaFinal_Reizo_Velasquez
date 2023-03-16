@@ -29,7 +29,7 @@
         "precio": 60,
         "img":
             "../img/audifonos.jpg",
-        "antidad:": 1
+        "cantidad": 1
     },
     {
         "id":5,

@@ -69,11 +69,23 @@ const pintarCarrito = () => {
     totalPrecio.innerHTML = `total a pagar : ${total} $`;
     modalContainer.append(totalPrecio)
 
-    // let pagar = document.createElement("button")
-    // pagar.innerText = "Pagar";
-    // pagar.className = "pagar";
+    let pagar = document.createElement("button")
+    pagar.innerText = "Pagar";
+    pagar.className = "pagar";
 
-    // totalPrecio.append(pagar)
+    totalPrecio.append(pagar)
+
+    pagar.addEventListener("click", ()=>{
+        carrito = [];
+        Swal.fire(
+            '¡Compra Exitosa!',
+            'Continua comprando!',
+            'success'
+        )
+        carritoCounter();
+        saveLocal();
+        pintarCarrito();
+    })
 }
 
 verCarrito.addEventListener("click", pintarCarrito);
