@@ -207,3 +207,23 @@ header{
 .pagar:hover{
     opacity: 0.7;
 }
+
+.delete-product, .sumar, .restar{
+    cursor: pointer;
+}
+
+.carrito-g{
+    display: flex;
+}
+.cantidad-carrito{
+    background-color: red;
+    color: white;
+    width: 23px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px;
+    position: inherit;
+    align-self: flex-end;
+    display: none;
+}
